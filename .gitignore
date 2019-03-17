@@ -1,0 +1,28 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+#lib
+node_modules/
+
+# virtual env
+/env
+
+# ng build
+/public
+
+# production
+/build
+/keys
+/tools
+
+# misc
+.DS_Store
+.env
+
+#ide
+.idea/
+
+# key
+keys/
+# pyc
+*.pyc
+
