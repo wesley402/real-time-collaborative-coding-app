@@ -1,4 +1,4 @@
-# Collaborative Online Judge System
+# Real Time Collaborative Coding Application
 A collaborative online judge system allows multiple users to edit codes at the same time. You can choose C++, Java or Python to execute codes in the system.
 
 ## System Architecture
