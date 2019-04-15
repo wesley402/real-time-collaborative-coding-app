@@ -5,8 +5,8 @@ A collaborative coding  system allows multiple users to edit codes at the same t
 Stack   | Techs
 ---     | ---
 Client  | Angular, Socket.IO
-Server  | Node/Express, Socket.IO, Redis, MongoDB, Nginx
-Backend | Nginx, Flask, Docker 
+Server  | Node/Express, Socket.IO, Redis, MongoDB
+Backend | Flask, Docker 
 
 ## How it Works?
 
