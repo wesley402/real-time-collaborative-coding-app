@@ -8,14 +8,9 @@ Stack   | Techs
 ---     | ---
 Client  | Angular, Socket.IO
 Server  | Node/Express, Socket.IO, Redis, MongoDB
-<<<<<<< HEAD
 Backend | Flask, Docker
 
 ![arch_image](/images/arch.jpg)
-
-=======
-Backend | Flask, Docker 
->>>>>>> 5e34d39c167717caf45649f71b590f75a310af0d
 
 
 ## Web Client
@@ -25,7 +20,6 @@ We choose Ace editor as the edit environment, using socket.IO as the communicati
 ## Web Server
 ### Collaboration Editing
 We keep the codes, list of participants, editing records, and cursor location. We store editing session in Redis, and all of users can work on the same edit session. When a user modify the code in the session, the other users' editors will be synchronized in time. Also, just like Google Document, a user can see other users' cursor location.
-
 
 ## Backend Server
 ### Code Execution Service (Flask + Docker)
