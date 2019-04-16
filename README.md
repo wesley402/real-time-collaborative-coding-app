@@ -8,10 +8,14 @@ Stack   | Techs
 ---     | ---
 Client  | Angular, Socket.IO
 Server  | Node/Express, Socket.IO, Redis, MongoDB
+<<<<<<< HEAD
 Backend | Flask, Docker
 
 ![arch_image](/images/arch.jpg)
 
+=======
+Backend | Flask, Docker 
+>>>>>>> 5e34d39c167717caf45649f71b590f75a310af0d
 
 
 ## Web Client
