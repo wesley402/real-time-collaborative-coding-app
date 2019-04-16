@@ -1,11 +1,11 @@
 fuser -k 3000/tcp
 service redis_6379 start
 
-cd ./server
+cd ./web_server
 nodemon server.js &
 
 
-cd ../executor
+cd ../executor_service
 python3 executor_server.py &
 
 

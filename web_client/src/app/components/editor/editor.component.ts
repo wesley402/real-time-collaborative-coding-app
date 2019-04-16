@@ -23,7 +23,7 @@ export class EditorComponent implements OnInit {
     'Java': `public class Example {
     public static void main(String[] args) {
       // Type your code here
-    }
+      }
     }`,
     'C++': `#include<iostream>
     using namespace std;
@@ -92,7 +92,8 @@ export class EditorComponent implements OnInit {
       lang: this.language.toLowerCase()
     }
     this.data.buildAndRun(data)
-      .then(res => this.output = res.text);
+      .then(res => 
+        this.output = res.text);
   }
 
 

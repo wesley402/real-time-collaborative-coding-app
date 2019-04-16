@@ -1,15 +1,17 @@
 <section>
   <header class="editor-header">
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
     <select class="form-control pull-left lang-select" id="language" name="language" [(ngModel)]="language" (change)="setLanguage(language)">
       <option *ngFor="let language of languages" [value] ="language">
         {{language}}
       </option>
     </select>
 
-<!-- Button trigger modal -->
-    <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal">
-      Refresh
-    </button>
+    <div class="btn-group" role="group" aria-label="Third group">
+      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Refresh</button>
+    </div>
+  </div>
+
 
 <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -26,21 +28,30 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-success" data-dismiss="modal" (click)="resetEditor()">Confirm</button>
-            <button type="button" class="btn btn-primary">Cancel</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
           </div>
         </div>
       </div>
     </div>
   </header>
 
+  <div class="row">
+      <div class="col"><hr></div>
+      <div class="col-auto"></div>
+      <div class="col"><hr></div>
+  </div>
+
 <div>
   <div id="editor"></div>
 </div>
 
-  <div>
+  <div class="text-primary">
     {{ output }}
   </div>
-<footer class="editor-footer">
-  <button type="button" class="btn btn-success pull-right" (click)="submit()">Submit Solution</button>
+<div>
+  <footer class="editor-footer">
+    <button type="button" class="btn btn-success pull-right" (click)="submit()">Submit Solution</button>
 </footer>
+
+</div>
 </section>
